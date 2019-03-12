@@ -15,11 +15,13 @@
     <div class="row pt-3 pb-5 px-3" >
         <div class="col-sm">
             <h3>All Data</h3>
-            <img src="Marina_Figures/all.png" alt="All Data" width=100% />              
+            <img src="Marina_Figures/all.png" alt="All Data" width=100% />  
+            <h4>Some extreme high prices are outliers that mask the relationship between points and prices</h4>            
         </div>
         <div class="col-sm">
-            <h3>Filtered Data (price < $1000)</h3>
+            <h3>Remove outliers (price < $1000)</h3>
             <img src="Marina_Figures/filtered.png" alt="Filtered Data"  width=100%/>
+            <h4>Each point corresponds to a big range of prices, but the higher the points, the higher the maximum price/medium price/mean price</h4>
         </div>
     </div>
 </div>
@@ -29,6 +31,7 @@
         <div class="col-sm-6">
             <h3>Maximum Price Per Point</h3>
             <img src="Marina_Figures/max.png" alt="max" width = 100%  />
+            <h4>Predicting maximum price with points with the following three models</h4>
         </div>  
     </div>
     <br>
@@ -72,7 +75,7 @@
               </tr>
             </tbody>
           </table>
-
+         <h4>Linear regression performs the best. SVR_RBF is unstable, sometimes performing well but sometimes overfitting the training data.</h4>
     </div>
 </div>
     <br>
@@ -81,6 +84,7 @@
         <div class="col-sm-6">
             <h3>Mean Price Per Point</h3>
             <img src="Marina_Figures/mean.png" alt="mean" width = 100%  />
+            <h4>Predicting mean price with points with the following three models</h4>
         </div>  
     </div>
     <div class = 'row bg-warning pt-3 pb-4 px-3'>
@@ -122,6 +126,7 @@
               </tr>
             </tbody>
           </table>
+          <h4>SVR_RBF model performs the best in capturing the nonlinear relationship and thus in predicting prices.</h4>
         </div>
 </div>
     <br>
@@ -130,6 +135,7 @@
         <div class="col-sm-6">
             <h3>Median Price Per Point</h3>
             <img src="Marina_Figures/median.png" alt="median" width = 100%  />
+            <h4>Predicting median price with points with the following three models</h4>
         </div>  
     </div>
     <div class = 'row bg-info pt-3 pb-4 px-3'>
@@ -171,7 +177,13 @@
                   </tr>
                 </tbody>
               </table>
-    </div>
+              <h4>SVR_RBF model performs the best in capturing the nonlinear relationship and thus in predicting prices.</h4>
+              <br>
+              <br> 
+            <br>
+            <br>
+              <h3> SUMMARY: Different models perform differently depending on the pattern of the data. It is important to select the right model for each situation.</h3>
+            </div>
 </div> 
 <br> 
 <br>
